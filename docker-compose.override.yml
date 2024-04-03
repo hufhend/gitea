@@ -1,7 +1,7 @@
 services:
   server:
     environment:
-      - VIRTUAL_PORT=30000
+      - VIRTUAL_PORT=3000
 #      - LETSENCRYPT_TEST=true
       - VIRTUAL_HOST=git.akira.cz
       - LETSENCRYPT_HOST=git.akira.cz

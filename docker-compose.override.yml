@@ -1,7 +1,8 @@
 services:
   server:
     environment:
-      - VIRTUAL_PORT=3000
+      - VIRTUAL_PORT=3000 
+        # really use the contejner internal port
       - VIRTUAL_PROTO=HTTP
 #      - LETSENCRYPT_TEST=true
       - VIRTUAL_HOST=git.akira.cz

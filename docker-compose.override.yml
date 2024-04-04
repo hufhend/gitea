@@ -2,7 +2,11 @@ services:
   server:
     environment:
       - VIRTUAL_PORT=3000
+      - VIRTUAL_PROTO=HTTP
 #      - LETSENCRYPT_TEST=true
       - VIRTUAL_HOST=git.akira.cz
       - LETSENCRYPT_HOST=git.akira.cz
       - LETSENCRYPT_EMAIL=hufhendr@gmail.com
+networks:
+  default:
+    name: network

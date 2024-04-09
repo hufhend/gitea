@@ -26,6 +26,7 @@ services:
 
   db:
     image: postgres:latest
+    container_name: gitea-db
     restart: always
     environment:
       - POSTGRES_USER=gitea
